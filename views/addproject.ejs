@@ -1,0 +1,25 @@
+<%- include('head'); %>
+<%- include('navbar'); %>
+<div class="m-5">
+    <form action="/form" method="POST" class="m-5 p-5">
+        <div class="form-group m-1">
+        <label for="ProjectName"> Project Name :</label>
+        <input class="form-control" type="text" id="pname" name="pname" placeholder="Enter Project name here">
+        </div>
+        <div class="form-group m-1">
+        <label for="Roll-No">Roll No. :</label>
+        <input class="form-control" type="text" name="roll" id="roll" placeholder="S20___________"> 
+        </div>
+        <div class="form-group m-1">
+        <label for="Semester">Semester :</label>
+        <input class="form-control" type="text" name="sem" id="sem" placeholder="e.g. First, Second, etc.">
+        </div>
+        <div class="form-group m-1">
+        <label for="tech">Technology Used :</label>
+        <input class="form-control" type="text" name="tech" id="tech" placeholder="e.g. React, Django, etc.">
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-primary m-2 d-flex justify-content-end">Submit</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+<%- include('head'); %>
+<%- include('navbar'); %>
+
+<table class="table m-5 p-5 w-75">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Project Name</th>
+        <th scope="col">Roll No.</th>
+        <th scope="col">Semester</th>
+        <th scope="col">Technology Used</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">0</th>
+        <td>Default</td>
+        <td>Default</td>
+        <td>Default</td>
+        <td>Default</td>
+      </tr>
+    <% for(const dbpro of model) { %>
+        <tr>
+            <td> <%=dbpro.uid %> </td> 
+            <td> <%=dbpro.pname %> </td> 
+            <td> <%=dbpro.roll %> </td> 
+            <td> <%=dbpro.sem %> </td> 
+            <td> <%=dbpro.tech %> </td> 
+        </tr>
+    <% } %>     
+    </tbody>
+</table>
